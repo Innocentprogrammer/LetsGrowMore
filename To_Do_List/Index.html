@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Title-->
+    <title>Simple Student Record</title>
+    <!-- CSS File-->
+    <link rel="stylesheet" href="style.css"/> 
+</head>
+<body style="background-color: rgb(3, 15, 103)">
+	<CENTER><b><h2 style="color:white; font-size:30px">To Do List</h2></b></CENTER>
+    <!--Table-->
+    <table>
+        <!--Column-1-->
+        <td>
+            <!--Row-1-->
+            <tr>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="on">
+                  <!--div-1-->
+                    <div>
+                        <label style="color: white; font-size: 20px; margin-left: 26%;">Add Task<br></label>
+                        <!--Input User Name-->
+                        <input type="text" name="userName" id="userName" placeholder="Enter the Task...">
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+                    </div>
+                    <div class="form-action-buttons">
+                        <!--Input Button-->
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </tr>
+            <!--Row-2-->
+            <tr>
+                <!--Nested Table-->
+                <table class="list" id="stdlist" style="background-color: #C2976D;">
+                    <!--Table Head-->
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+                            <th>Tasks</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </tr>
+        </td>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
