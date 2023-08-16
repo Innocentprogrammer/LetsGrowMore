@@ -1,6 +1,5 @@
 var selectedRow = null
 
-// Form Submit Function
 function onFormSubmit() {
     // check validity
     if (validate()) {
